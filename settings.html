@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>GreenLog - Settings</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/app.js" defer></script>
+</head>
+
+<body class="reg">
+
+    <table class="head5">
+        <tr>
+            <td>Track Actions</td>
+            <td>Set Goals</td>
+            <td>View Progress</td>
+        </tr>
+    </table>
+
+    <table id="top">
+        <tbody>
+            <tr id="navbar">
+                <td><a href="index.html">Home</a></td>
+                <td><a href="log.html">Log Action</a></td>
+                <td><a href="goals.html">Goals</a></td>
+                <td><a href="stats.html">Stats</a></td>
+                <td id="active"><a href="settings.html">Settings</a></td>
+            </tr>
+            <tr id="quizme">
+                <td colspan="4"></td>
+                <td><a href="add.html">ADD ENTRY</a></td>
+            </tr>
+        </tbody>
+    </table>
+
+    <header id="title">
+        <h1>Settings</h1>
+        <h2>Customize your preferences</h2>
+    </header>
+
+    <main>
+        <form action="#" method="post" class="settings-form">
+            <label for="theme">Theme:</label>
+            <select id="theme" name="theme">
+                <option value="light">Light</option>
+                <option value="dark">Dark</option>
+                <option value="system">System Default</option>
+            </select>
+
+            <label for="email-notifications">
+                <input type="checkbox" id="email-notifications" name="email-notifications">
+                Email Notifications
+            </label>
+
+            <label for="reminder-frequency">Reminder Frequency:</label>
+            <select id="reminder-frequency" name="reminder-frequency">
+                <option value="daily">Daily</option>
+                <option value="weekly">Weekly</option>
+                <option value="monthly">Monthly</option>
+            </select>
+
+            <fieldset>
+                <legend>Privacy</legend>
+                <label for="privacy-public">
+                    <input type="radio" id="privacy-public" name="privacy" value="public">
+                    Public
+                </label>
+                <label for="privacy-private">
+                    <input type="radio" id="privacy-private" name="privacy" value="private">
+                    Private
+                </label>
+            </fieldset>
+
+            <button type="submit">Save Settings</button>
+        </form>
+    </main>
+
+    <footer id="workscited">
+        <p>© 2025 GreenLog Inc. | <a href="mailto:support@greenlog.com">support@greenlog.com</a></p>
+    </footer>
+
+</body>
+
+</html>

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>GreenLog - Set Goals</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/app.js" defer></script>
+</head>
+
+<body class="reg">
+
+    <table class="head5">
+        <tr>
+            <td>Track Actions</td>
+            <td>Set Goals</td>
+            <td>View Progress</td>
+        </tr>
+    </table>
+
+    <table id="top">
+        <tbody>
+            <tr id="navbar">
+                <td><a href="index.html">Home</a></td>
+                <td><a href="log.html">Log Action</a></td>
+                <td id="active"><a href="goals.html">Goals</a></td>
+                <td><a href="stats.html">Stats</a></td>
+                <td><a href="settings.html">Settings</a></td>
+            </tr>
+            <tr id="quizme">
+                <td colspan="4"></td>
+                <td><a href="add.html">ADD GOAL</a></td>
+            </tr>
+        </tbody>
+    </table>
+
+    <header id="title">
+        <h1>Set a Goal</h1>
+        <h2>Define your sustainability targets</h2>
+    </header>
+
+    <main>
+        <form action="#" method="post" class="goals-form">
+            <label for="goal-title">Goal:</label>
+            <input type="text" id="goal-title" name="goal-title" placeholder="e.g., Recycle 10 items weekly">
+
+            <label for="goal-category">Category:</label>
+            <select id="goal-category" name="goal-category">
+                <option value="recycling">Recycling</option>
+                <option value="transport">Eco Transportation</option>
+                <option value="energy">Energy Conservation</option>
+                <option value="water">Water Conservation</option>
+                <option value="other">Other</option>
+            </select>
+
+            <label for="target-value">Target:</label>
+            <input type="number" id="target-value" name="target-value" placeholder="Amount or %">
+
+            <label for="due-date">Due Date:</label>
+            <input type="date" id="due-date" name="due-date">
+
+            <label for="notes">Notes:</label>
+            <textarea id="notes" name="notes" rows="4" placeholder="Add any details..."></textarea>
+
+            <button type="submit">Save Goal</button>
+        </form>
+    </main>
+
+    <footer id="workscited">
+        <p>© 2025 GreenLog Inc. | <a href="mailto:support@greenlog.com">support@greenlog.com</a></p>
+    </footer>
+
+</body>
+
+</html>
